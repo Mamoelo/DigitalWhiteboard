@@ -22,7 +22,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Stack;
 
-public class DigitalWhiteboard extends Application {
+public class DigitalWhiteboard extends Application 
+{
     private GraphicsContext gc;
     private Canvas canvas;
     private ColorPicker colorPicker;
@@ -30,7 +31,8 @@ public class DigitalWhiteboard extends Application {
     private MediaPlayer mediaPlayer;
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) 
+    {
         primaryStage.setTitle("🖌️ Digital Whiteboard");
 
         canvas = new Canvas(1200, 800);
@@ -50,7 +52,7 @@ public class DigitalWhiteboard extends Application {
         Button undoBtn = createButton("↩️ Undo", e -> undo());
         Button redoBtn = createButton("↪️ Redo", e -> redo());
 
-        // Layout Styling
+        
         HBox controlPanel = new HBox(10, colorPicker, clearBtn, saveBtn, textBtn, imgBtn, videoBtn, musicBtn, undoBtn, redoBtn);
         controlPanel.getStyleClass().add("hbox");
 
@@ -66,7 +68,8 @@ public class DigitalWhiteboard extends Application {
         primaryStage.show();
     }
 
-    private Button createButton(String text, javafx.event.EventHandler<javafx.event.ActionEvent> event) {
+    private Button createButton(String text, javafx.event.EventHandler<javafx.event.ActionEvent> event) 
+    {
         Button button = new Button(text);
         button.setOnAction(event);
         return button;
