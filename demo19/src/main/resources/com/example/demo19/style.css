@@ -1,0 +1,29 @@
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+    -fx-background-color: #000035;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-min-width: 130px;
+    -fx-min-height: 50px;
+    -fx-alignment: center;
+    -fx-graphic-text-gap: 8px;
+}
+
+.button:hover {
+    -fx-background-color: #00005a;
+}
+
+.hbox {
+    -fx-padding: 15px;
+    -fx-spacing: 12px;
+    -fx-alignment: center;
+    -fx-background-color: #ddd;
+}
